@@ -687,16 +687,16 @@ footer p {
 
     .text-content {
         max-height: 1px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
-
     .slide-text {
         font-size: 10px !important;
-        margin-right: 300px;
+        margin-right: 350px;
     }
 
     .slide-title {
         font-size: 25px !important;
+        margin-right: 350px;
     }
 
     .komik-info p {
