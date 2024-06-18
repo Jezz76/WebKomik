@@ -1,0 +1,637 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+* {
+    text-decoration: none;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode p {
+    /* background-color: #ffffff; */
+    color: #000000;
+}
+
+header {
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    /* padding: 50px 0; */
+    /* text-align: center; */
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+
+
+
+/* body.light-mode header {
+    background-color: #f0f0f0;
+    color: #000000;
+} */
+
+nav {
+    margin-left: 200px; /* This will push the nav element to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e6e5e5;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* Set a smooth font */
+    font-size: 18px; /* Set the desired font size */
+    font-weight: 300; /* Adjust the font weight */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+header, footer {
+    width: 100%; /* Pastikan elemen mengambil seluruh lebar halaman */
+    position: relative; /* Pastikan elemen diatur secara relatif */
+    /* background-color: #d32f2f;
+    color: #e6e5e5; */
+}
+
+/* body.light-mode nav ul li a {
+    color: #000000;
+} */
+
+nav ul li a:hover {
+    color: #632828; /* Warna link saat dihover */
+}
+
+p {
+    color: #ffffff; /* Warna teks paragraf */
+}
+
+a {
+    color: #ffffff; /* Warna link */
+}
+
+/* body.light-mode a {
+    color: #000000;
+} */
+
+a:hover {
+    color: #d32f2f; /* Warna link saat dihover */
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 450px;
+    padding-right: 200px;
+    
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.share-button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.facebook { background-color: #3b5998; color: white; border-radius: 10px; } /* Rounded corners */
+.twitter { background-color: #1da1f2; color: white; border-radius: 10px; } /* Rounded corners */
+.whatsapp { background-color: #25d366; color: white; border-radius: 10px; } /* Rounded corners */
+.pinterest { background-color: #ff0000; color: white; border-radius: 10px; } /* Rounded corners */
+.telegram { background-color: #0088cc; color: white; border-radius: 10px; } /* Rounded corners */
+
+.swiper-container {
+    /* border: 2px solid #ccc; Warna dan ketebalan border */
+    padding: 20px; /* Padding di dalam border */
+    /* border-radius: 8px; Untuk membuat sudut border lebih bulat */
+    /* width: 77.5%; */
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: #2e2e2e; */
+}
+
+.swiper-container.light-mode {
+    background-color: #ffffff; /* Warna latar belakang swiper dalam mode terang */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+
+.swiper-slide:nth-child(1) {
+    background-image: url('assets/OPC.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(2) {
+    background-image: url('assets/YGNK.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(3) {
+    background-image: url('assets/ATEO4N.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(4) {
+    background-image: url('assets/Minato.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(5) {
+    background-image: url('assets/bakuman-age-13-000695-gJfLOwEp1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(6) {
+    background-image: url('assets/DeathNote1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(7) {
+    background-image: url('assets/FGO1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(8) {
+    background-image: url('assets/Bleach1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content img {
+    margin-right: 100px; /* Jarak antara gambar dan teks */
+    margin-left: 100px;
+    transition: transform 0.3s ease;
+}
+
+.slide-content img:hover {
+    margin-right: 100px; /* Jarak antara gambar dan teks */
+    transform: scale(1.1);
+}
+
+
+.slide-text {
+    font-size: 24px;
+    max-width: 90%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.light-mode .slide-text {
+    color: #fff; /* Tetapkan warna teks menjadi hitam dalam mode terang */
+    text-decoration: none;
+}
+
+.slide-title {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Menambahkan outline hitam */
+    font-size: 40px; /* Ubah ukuran sesuai kebutuhan Anda */
+    font-weight: bold; /* Opsional: Menambahkan ketebalan pada teks */
+    text-decoration: none;
+}
+
+
+
+.gambar-komik {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;    
+}
+
+.gambar-komik:hover {
+    transform: scale(1.1);
+}
+
+
+.komik-item img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat kursor diarahkan */
+}
+
+#mode-toggle {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+#mode-toggle:hover {
+    background-color: #ffffff;
+    color: #432964;
+}
+
+body.light-mode #mode-toggle {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.light-mode #mode-toggle:hover {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+body.light-mode #komik-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+body.light-mode #trending-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+body.light-mode .chapter-list {
+    color: #000;
+}
+
+
+#komik-container {
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Memastikan elemen tetap sejajar saat diatur ulang */
+    justify-content: space-between; /* Menyejajarkan elemen */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    
+}
+
+#daftar-komik-container {
+    /* border: 2px solid #ccc; */
+    padding: 20px;
+
+    /* border-radius: 3500px; */
+    width: calc(300% - 10px); /* 30% dari lebar layar dengan jarak 10px */
+    margin-bottom: 40px; /* Jarak antar elemen */
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 100x;
+    display: flex;
+    justify-content: left;
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    border-radius: 8px;
+}
+
+
+#trending-container {
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Memastikan elemen tetap sejajar saat diatur ulang */
+    justify-content: space-between; /* Menyejajarkan elemen */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#komik-trending-container {
+    /* border: 2px solid #ccc; */
+    padding: 20px;
+
+    /* border-radius: 3500px; */
+    width: calc(300% - 10px); /* 30% dari lebar layar dengan jarak 10px */
+    margin-bottom: 40px; /* Jarak antar elemen */
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 100x;
+    display: flex;
+    justify-content: left;
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    border-radius: 8px;
+}
+
+/* .trending-item {
+    border: 2px solid #999; /* Mengatur border untuk item trending */
+    /* Sisipkan gaya lain yang Anda inginkan */
+/* } */ 
+
+#daftar-komik {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row; /* Mengatur tata letak horizontal */
+    justify-content: space-between; /* Menambahkan jarak antara komik */
+    grid-gap: 20px; /* Menambahkan jarak antara komik */
+    width: 100%; /* Memastikan daftar komik menyesuaikan lebar container */
+    
+}
+
+#daftar-komik a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    color: inherit; /* Warna teks sesuai dengan konteks */
+}
+
+/* #daftar-komik img {
+    /* margin-right: 20px; Jarak antara gambar dan teks */
+/* } */ */
+
+#daftar-komik p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#trending-komik {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row; /* Mengatur tata letak horizontal */
+    justify-content: space-between; /* Menambahkan jarak antara komik */
+    grid-gap: 20px; /* Menambahkan jarak antara komik */
+    width: 100%; 
+}
+
+#trending-komik a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    color: inherit;
+}
+
+#trending-komik p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.trending-item img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat kursor diarahkan */
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak gambar dan info secara vertikal */
+    align-items: center;
+    /* width: 30%; Mengatur lebar setiap item komik agar pas dengan kontainer */
+    /* border: 2px solid #ccc; Menambahkan border pada setiap item komik */
+    padding: 10px; /* Menambahkan padding di dalam border */
+    border-radius: 8px; /* Membuat border lebih bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* background-color: #632828; */
+
+}
+
+.trending-item img {
+    text-align: center;
+    width: 100%; /* Mengatur lebar gambar agar memenuhi lebar kontainer */
+    max-height: 300px; /* Menentukan ketinggian maksimum gambar */
+    object-fit: cover; /* Menyesuaikan gambar ke dalam kontainer tanpa mengubah rasio aspek */
+    margin-bottom: 10px; /* Jarak bawah antara gambar dan info */
+    transition: transform 0.3s ease; /* Efek transisi saat mengarahkan kursor */
+    border-radius: 12px;
+}
+
+
+
+.trending-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+.trending-info p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rank {
+    /* position:auto; */
+    top: 10px;
+    left: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+/* .komik-item:nth-child(1) {
+    background-image: url('/Gambar/OPC.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.komik-item:nth-child(2) {
+    background-image: url('/Gambar/Duar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.komik-item:nth-child(3) {
+    background-image: url('/Gambar/ATEO4N.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.komik-item {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak gambar dan info secara vertikal */
+    align-items: center;
+    /* width: 30%; Mengatur lebar setiap item komik agar pas dengan kontainer */
+    /* border: 2px solid #ccc; Menambahkan border pada setiap item komik */
+    padding: 10px; /* Menambahkan padding di dalam border */
+    border-radius: 8px; /* Membuat border lebih bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* background-color: #632828; */
+
+    
+}
+
+.komik-item img {
+    text-align: center;
+    width: 100%; /* Mengatur lebar gambar agar memenuhi lebar kontainer */
+    max-height: 300px; /* Menentukan ketinggian maksimum gambar */
+    object-fit: cover; /* Menyesuaikan gambar ke dalam kontainer tanpa mengubah rasio aspek */
+    margin-bottom: 10px; /* Jarak bawah antara gambar dan info */
+    transition: transform 0.3s ease; /* Efek transisi saat mengarahkan kursor */
+    border-radius: 12px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
+}
+
+    /* .komik-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .komik-link img {
+        margin-bottom: 10px; 
+    } */
+
+.komik-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+.komik-info p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.chapter-list li {
+    margin-bottom: 5px;
+}
+
+.chapter-list li a {
+    text-decoration: none;
+}
+
+.chapter-list li a:hover {
+    text-decoration: underline;
+}
+
+.chapter-list li a::before {
+    content: "\00B7"; /* kode karakter unicode untuk ikon titik tengah */
+    margin-right: 5px; /* jarak antara ikon dan teks */
+}
+
+.light-mode .chapter-list a {
+    color: #000000; /* Tetapkan warna teks menjadi hitam dalam mode terang */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#footer-text {
+    color: #ffffff; /* Warna teks tetap putih */
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
