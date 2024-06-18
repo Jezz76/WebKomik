@@ -635,3 +635,12 @@ footer p {
 .social-media a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1080px) {
+    .logo {
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: auto;
+    }
+}
