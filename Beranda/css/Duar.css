@@ -1,0 +1,386 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode p {
+    /* background-color: #ffffff; */
+    color: #000000;
+}
+
+header {
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    /* border-radius: 10px;  */
+    /* padding: 10px;  */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px 0; /* Added margin on top and bottom */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header h1 {
+    color: #ffffff; /* Warna teks untuk judul dan subjudul */
+    font-size: 24px;
+    margin: 0;
+}
+.header h2 {
+    color: #ffc107; /* Warna teks untuk judul dan subjudul */
+}
+
+
+body.light-mode .container {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.share-button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook { background-color: #3b5998; color: white; border-radius: 10px; } /* Rounded corners */
+.twitter { background-color: #1da1f2; color: white; border-radius: 10px; } /* Rounded corners */
+.whatsapp { background-color: #25d366; color: white; border-radius: 10px; } /* Rounded corners */
+.pinterest { background-color: #e60023; color: white; border-radius: 10px; } /* Rounded corners */
+.telegram { background-color: #0088cc; color: white; border-radius: 10px; } /* Rounded corners */
+
+
+#search {
+    width: 97.5%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode #search {
+    background-color: #fff; /* Warna latar belakang pada mode terang */
+    color: #ffffff; /* Warna teks pada mode terang */
+    border: 1px solid #333333; /* Changed border color for light mode */
+
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+}
+
+body.light-mode .chapter {
+    background-color: #ffffff;
+    border: 1px solid #333333; /* Changed border color for light mode */
+    color: #000000;
+}
+
+body.light-mode .chapter a{
+    /* background-color: #ffffff; */
+    /* border: 1px solid #333333;  */
+    color: #000000;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah layar */
+    right: 20px; /* Jarak dari sisi kanan layar */
+    display: none; /* Sembunyikan tombol secara default */
+    /* Tambahkan gaya lainnya sesuai kebutuhan Anda */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 50px;
+}
+
+
+.download-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #d32f2f;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffc107;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* .bookmarked { */
+    /* background-color: #32CD32; Warna hijau untuk tombol bookmarked */
+    /* color: #fff; Warna teks putih */
+/* } */
+
+.bookmark-button {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.followers, .rating {
+    margin-top: 10px;
+}
+
+.rating span {
+    margin-right: 5px;
+}
+
+.info-section {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.info-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.chapters {
+    margin: 20px 0;
+}
+
+.chapters div {
+    margin-bottom: 10px;
+}
+
+.details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.details td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* header {
+    background-color: #1c1c5b;
+    color: #e6e5e5;
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+} */
+
+header, footer {
+    width: 100%; /* Pastikan elemen mengambil seluruh lebar halaman */
+    position: relative; /* Pastikan elemen diatur secara relatif */
+}
+
+nav {
+    margin-left: 200px; /* This will push the nav element to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e6e5e5;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* Set a smooth font */
+    font-size: 18px; /* Set the desired font size */
+    font-weight: 300; /* Adjust the font weight */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: #720000; /* Warna link saat dihover */
+}
+
+p {
+    color: #ffffff; /* Warna teks paragraf */
+}
+
+a {
+    color: #ffffff; /* Warna link */
+}
+
+a:hover {
+    color: #d32f2f; /* Warna link saat dihover */
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 450px;
+    padding-right: 200px;
+}
+
+#mode-toggle {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+#mode-toggle:hover {
+    background-color: #ffffff;
+    color: #432964;
+}
+
+body.light-mode #mode-toggle {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.light-mode #mode-toggle:hover {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: #e6e5e5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-text {
+    color: #ffffff; /* Warna teks tetap putih */
+}
+
+
+/* footer.light-mode p {
+    color:#fff
+} */
+
+
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
