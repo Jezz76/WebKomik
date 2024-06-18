@@ -644,3 +644,92 @@ footer p {
 .social-media a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 415px) {
+    .logo {
+        height: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0px; 
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }   
+    
+    header {
+        width: 155%;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .swiper-container{
+        width: 600px;
+        /* height: 20px; */
+    }
+
+    .slide-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 450px; */
+        width: 850px;
+        max-height: 250px;
+    }
+
+    .slide-content img {
+        transition: transform 0.3s ease;
+        max-height: 250px;
+        margin-left: 0px !important;
+        margin-right: 0px !important; 
+    }
+
+    .text-content {
+        max-height: 1px;
+        margin-bottom: 100px;
+    }
+
+    .slide-text {
+        font-size: 10px !important;
+        margin-right: 300px;
+    }
+
+    .slide-title {
+        font-size: 25px !important;
+    }
+
+    .komik-info p {
+        font-size: 10px !important;
+    }
+
+    .chapter-list a {
+        font-size: 9px;
+    }
+
+    main {
+        width: 155%;
+    }
+
+   .trending-item {
+    width: 90px;
+   }
+
+   .trending-item img {
+    width: 100px !important;
+   }
+
+   .trending-item p {
+    font-size: 10px !important;
+   }
+
+   .rank {
+    font-size: 10px !important;
+   }
+
+   #footer p,a {
+    font-size: 11px;
+   }
+
+}
