@@ -645,9 +645,9 @@ footer p {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 450px) {
     .logo {
-        height: 100px;
+        height: 60px;
         margin-right: -100px;
         margin-left: 0px;
         padding-right: 0px; 
@@ -661,12 +661,14 @@ footer p {
         width: 155%;
     }
 
+
     h2 {
         font-size: 18px !important;
     }
 
     .swiper-container{
         width: auto;
+        /* height: 20px; */
     }
 
     .slide-content {
@@ -689,6 +691,7 @@ footer p {
         max-height: 1px;
         margin-bottom: 150px;
     }
+
     .slide-text {
         font-size: 10px !important;
         margin-right: 350px;
@@ -712,19 +715,20 @@ footer p {
     }
 
    .trending-item {
-    width: 90px;
+    width: 55px;
    }
 
    .trending-item img {
-    width: 100px !important;
+    width: 80px !important;
+    max-height: 300px !important;
    }
 
    .trending-item p {
-    font-size: 10px !important;
+    font-size: 8px !important;
    }
 
    .rank {
-    font-size: 10px !important;
+    font-size: 5px !important;
    }
 
    #footer p,a {
