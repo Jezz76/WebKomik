@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+main {
+    padding: 20px;
+}
+
+body.light-mode .komik-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+body.light-mode .gallery {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+body.light-mode #comments {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Changed border color for light mode */
+    color: #000000;
+}
+
+.komik-container{
+    /* display: block;
+    /* border: 2px solid #ccc;
+    padding: 20px; 
+    border-radius: 8px;  
+    width: 50%;  */ 
+    margin: 0 auto;
+    width: 50%;
+    /* max-width: 800px; */
+    padding: 20px;
+    /* margin: 20px 0;  */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.text-container {
+    text-align: justify; /* Hanya untuk teks */
+    margin-top: 20px; /* Jarak antara gambar dan teks */
+}
+
+.social-buttons {
+    margin: 20px 0;
+}
+
+.social-buttons .btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb {
+    margin: 20px 0;
+    color: #777;
+}
+
+.comic-grid {
+    max-width: 100%; /* Ubah width menjadi max-width */
+    height: auto; /* Atur tinggi menjadi otomatis agar gambar tetap proporsional */
+}
+
+.gallery {
+    /* display: block;
+    border: 2px solid #ccc;  
+    padding: 20px;  
+    border-radius: 8px; 
+    width: 50%; 
+    margin: 0 auto; */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.comic {
+    margin: 20px 0; /* Jarak antar gambar */
+}
+
+.comic img {
+    max-width: 100%; /* Atur lebar maksimal gambar menjadi 100% dari lebar parent */
+    height: auto; /* Biarkan tinggi gambar disesuaikan secara proporsional */
+    display: block; /* Agar gambar tetap dalam satu baris */
+    margin: 0 auto; /* Posisikan gambar ke tengah */
+}
+
+
+
+.chapter-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.chapter-navigation button,
+.chapter-navigation select {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chapter-navigation button:hover,
+.chapter-navigation select:hover {
+    background-color: #ddd;
+}
+
+.chapter-navigation .btn.download {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+}
+.chapter-navigation .btn.download:hover {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+}
+
+#comments {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#commentForm label {
+    margin-top: 10px;
+}
+
+#commentForm input,
+#commentForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#commentList {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
