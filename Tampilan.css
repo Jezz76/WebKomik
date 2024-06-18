@@ -648,7 +648,7 @@ footer p {
 @media screen and (max-width: 850px) {
     .logo {
         height: 100px;
-        margin-right: 0px;
+        margin-right: -100px;
         margin-left: 0px;
         padding-right: 0px; 
     }
@@ -666,8 +666,7 @@ footer p {
     }
 
     .swiper-container{
-        width: 600px;
-        /* height: 20px; */
+        width: auto;
     }
 
     .slide-content {
