@@ -384,3 +384,52 @@ footer p {
 .social-media a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 50px;
+        margin-right: -100px;
+        margin-left: auto;
+        padding-right: 0px; 
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        margin-left: -30px;
+        margin-right: -10px;
+    }
+
+    nav ul li a {
+        font-size: 9px;
+        font-weight: bold;
+    }   
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .share-buttons {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 380px;
+    }
+
+    .info-section p {
+        text-align: justify;
+        font-size: 12px;
+        margin-right: auto !important;
+    }
+
+    .details {
+        width: 10% !important;
+        font-size: 9px;
+    }
+}
