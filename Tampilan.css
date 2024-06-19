@@ -647,23 +647,15 @@ footer p {
 
 @media screen and (max-width: 450px) {
     .logo {
-        height: 60px;
+        height: 50px;
         margin-right: -100px;
-        margin-left: 0px;
+        margin-left: auto;
         padding-right: 0px; 
     }
 
-    nav ul li a {
-        font-size: 11px;
-    }   
-    
-    header {
-        width: 155%;
-    }
-
-
-    h2 {
-        font-size: 18px !important;
+    .swiper-slide{
+        width: 370px !important;
+        height: auto !important;
     }
 
     .swiper-container{
@@ -676,30 +668,78 @@ footer p {
         align-items: center;
         justify-content: center;
         /* height: 450px; */
-        width: 850px;
-        max-height: 250px;
+        width: 450px;
+        max-height: 100px;
     }
 
     .slide-content img {
         transition: transform 0.3s ease;
-        max-height: 250px;
-        margin-left: 0px !important;
-        margin-right: 0px !important; 
+        max-height: 100px;
+        max-width: 100px;
+        margin-left: 15px !important;
+        margin-right: 10px !important; 
     }
 
     .text-content {
         max-height: 1px;
-        margin-bottom: 150px;
+        margin-bottom: 40px;
     }
 
     .slide-text {
-        font-size: 10px !important;
-        margin-right: 350px;
+        font-size: 7.5px !important;
+        margin-right: 100px;
     }
 
     .slide-title {
-        font-size: 25px !important;
-        margin-right: 350px;
+        font-size: 12px !important;
+        margin-right: 100px;
+        margin-bottom: 5px;
+    }
+    
+    #komik-container {
+        width: auto !important;
+    }
+
+    #trending-container {
+        width: auto !important;
+    }
+
+    #trending-komik {
+        grid-gap: 0px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        margin: 15px !important;
+    }
+
+    #daftar-komik {
+        grid-gap: 0px !important;
+        /* margin-top: 24px;
+        display: grid; */
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* flex-direction: row;  */
+        /* justify-content: space-between;  */
+        /* grid-gap: 20px;  */
+        /* width: 100%;     */
+        margin: 15px !important;
+    }
+    
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 15px !important;
+    }
+
+    .komik-item {
+        width: 180px;
+        margin: 3.5px;
+    }
+
+    .komik-item img {
+        width: 80px !important;
     }
 
     .komik-info p {
@@ -707,32 +747,26 @@ footer p {
     }
 
     .chapter-list a {
+        margin-top: 10px !important;
+        font-size: 10px;
+        margin-bottom: 0px !important;
+    }
+    
+    nav ul {
+        margin-left: -30px;
+        margin-right: -10px;
+    }
+
+    nav ul li a {
         font-size: 9px;
+        font-weight: bold;
+    }   
+
+    footer p {
+        font-size: 15px;
     }
 
-    main {
-        width: 155%;
+    .share-buttons {
+        font-size: 10px;
     }
-
-   .trending-item {
-    width: 55px;
-   }
-
-   .trending-item img {
-    width: 80px !important;
-    max-height: 300px !important;
-   }
-
-   .trending-item p {
-    font-size: 8px !important;
-   }
-
-   .rank {
-    font-size: 5px !important;
-   }
-
-   #footer p,a {
-    font-size: 11px;
-   }
-
 }
