@@ -645,7 +645,7 @@ footer p {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     .logo {
         height: 50px;
         margin-right: -100px;
